@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Like514",
+    "version": "0.0.1",
+    "description": "YouTube上で、ユーザーが設定した特定の動画に自動で「いいね」ボタンを押すツールです。対象URLはオプションから変更可能。『514』は制作者のラッキーナンバーで、特別な意味はありません。",
+    "permissions": ["storage"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "options_page": "options.html",
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
